@@ -1,0 +1,72 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 15px 20px;
+}
+
+.header img {
+    height: 50px;
+}
+
+.header h5 {
+    margin: 0;
+}
+
+.header p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.card-custom {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/* Logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    max-width: 220px;
+}
+
+
+/* Description section */
+.description {
+    text-align: center;
+}
+.description h2 {
+    font-size: 22px;
+    color: #333;
+    text-align: left;
+}
+.description p {
+    font-family: Helvetica;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+    color: #888;
+}
+.footer-text {
+    margin: 0;
+    font-weight: 600;
+}
+.footer-version {
+    margin: 0;
+}

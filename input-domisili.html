@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI-DECO</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #fff;
+            border-bottom: 2px solid #ddd;
+            padding: 15px 20px;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .header h5 {
+            margin: 0;
+        }
+
+        .header p {
+            margin: 0;
+            font-size: 0.85rem;
+        }
+
+        .card-custom {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btn-back {
+            background-color: #ffc107;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        .btn-back:hover {
+            background-color: #e0a800;
+            text-decoration: none;
+        }
+
+        .btn-submit {
+            background-color: #ffc107;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .input-group .form-control {
+            background-color: #e9f1ff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .info-text {
+            font-size: 0.85rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <img src="garis3.png" alt="Logo" class="me-3">
+            <img src="logo.jpg" alt="Logo" class="me-3">
+            <div>
+                <h5>Desa Soco</h5>
+                <p>Kecamatan Dawe Kabupaten Kudus</p>
+            </div>
+        </div>
+        <div>
+            <a href="about1.html" class="btn btn-link">About</a>
+            <button class="btn btn-warning">Log out</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-4">
+        <!-- Tombol Kembali -->
+        <button class="btn-back" onclick="window.history.back();">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z" />
+            </svg>
+            Kembali
+        </button>
+
+        <!-- Card 1: Informasi Registrasi -->
+        <div class="card card-custom">
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Name:</strong> Jeon Stephen</p>
+                    <p><strong>NIK:</strong> 200XXXXXX</p>
+                    <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
+                    <p><strong>Telepon:</strong> +62 85XXXXXX</p>
+                    <p><strong>Email:</strong> jeon2@gmail.com</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Registration Status</strong></p>
+                    <p><strong>Layanan:</strong> Surat Pindah (23 Agustus 2024)</p>
+                    <p><strong>Current Registration Status:</strong> <span class="text-warning">Incomplete</span></p>
+                    <p><strong>Status:</strong> Completed</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Formulir -->
+        <div class="card card-custom">
+            <h6><strong>Lengkapi Formulir Dibawah:</strong></h6>
+            <form>
+                <div class="mb-3">
+                    <label for="layanan" class="form-label"><strong>Pilih Layanan:</strong></label>
+                    <select id="layanan" class="form-select">
+                        <option value="Keluar/Masuk">Keluar</option>
+                        <option value="Surat Pindah">Masuk</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label"><strong>Masukkan Dokumen:</strong></label>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="ektp" class="form-label">E-KTP</label>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="ektp">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="kk" class="form-label">Kartu Keluarga</label>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="kk">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="akta" class="form-label">Akta Kelahiran</label>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="akta">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="foto" class="form-label">Pas Foto</label>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="foto">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="skp" class="form-label">SKP</label>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="skp">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="surat" class="form-label">Surat RT/RW</label>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="surat">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="keterangan" class="form-label">Keterangan</label>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="keterangan">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-text mb-3">
+                    *Dengan mengklik tombol submit, Anda menyetujui bahwa semua informasi yang diberikan adalah benar.
+                </div>
+
+                <a href="pending.html" class="btn btn-submit">Submit</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+.navbar-brand img.logo {
+    height: 40px;
+  }
+  .navbar-text {
+    margin-right: auto;
+  }
+  .btn-logout {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    margin-left: 10px;
+  }
+  .btn-logout:hover {
+    background-color: #e0a800;
+  }
+  .btn-warning {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+  }
+  .btn-warning:hover {
+    background-color: #e0a800;
+  }
+  .table thead th {
+    background-color: #ffc107;
+    color: white;
+  }
+  .header {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 15px 20px;
+}
+
+.header img {
+    height: 50px;
+}
+
+.header h5 {
+    margin: 0;
+}
+
+.header p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+  

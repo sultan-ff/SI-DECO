@@ -1,0 +1,35 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bg-cover {
+    background: url("minang.png") no-repeat center center;
+    background-size: cover;
+}
+
+.bg-light-transparent {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}

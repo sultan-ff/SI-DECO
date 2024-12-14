@@ -1,0 +1,88 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.text-center h4, .text-center h5 {
+    margin: 0;
+}
+
+.qr-code {
+    margin-top: 20px;
+}
+body {
+    background-color: #f8f9fa;
+}
+
+.header {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 15px 20px;
+}
+
+.header img {
+    height: 50px;
+}
+
+.header h5 {
+    margin: 0;
+}
+
+.header p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.card-custom {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-back {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 1000x;
+    height: 700px;
+}
